@@ -1,0 +1,339 @@
+[
+  {
+    "method": "domain",
+    "path": "/v26/api.json",
+    "required_signature": "lookup: str | list[str]",
+    "options": [
+      "hide_text: bool | None = None",
+      "hide_dl: bool | None = None",
+      "live_only: bool | None = None",
+      "no_meta: bool | None = None",
+      "no_pii: bool | None = None",
+      "no_attr: bool | None = None",
+      "ip: bool | None = None",
+      "trust: bool | None = None",
+      "first_detected: str | None = None",
+      "last_detected: str | None = None"
+    ],
+    "parameters": [
+      "LOOKUP",
+      "HIDETEXT",
+      "HIDEDL",
+      "LIVEONLY",
+      "NOMETA",
+      "NOPII",
+      "NOATTR",
+      "IP",
+      "TRUST",
+      "FDRANGE",
+      "LDRANGE"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "changes",
+    "path": "/change1/api.json",
+    "required_signature": "lookup: str | list[str]",
+    "options": [
+      "since: str | None = None"
+    ],
+    "parameters": [
+      "LOOKUP",
+      "SINCE"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "relationships",
+    "path": "/rv5/api.json",
+    "required_signature": "lookup: str",
+    "options": [
+      "page: int | None = None",
+      "ip: bool | None = None"
+    ],
+    "parameters": [
+      "LOOKUP",
+      "PAGE",
+      "IP"
+    ],
+    "pagination": "relationships",
+    "authentication": true
+  },
+  {
+    "method": "lists",
+    "path": "/lists13/api.json",
+    "required_signature": "tech: str",
+    "options": [
+      "offset: str | None = None",
+      "country: str | None = None",
+      "since: str | None = None",
+      "all_sites: bool | None = None",
+      "meta: bool | None = None",
+      "other_techs: str | None = None",
+      "spend: str | None = None",
+      "revenue: str | None = None",
+      "sku: str | None = None",
+      "followers: str | None = None",
+      "employees: str | None = None",
+      "sitemap: str | None = None",
+      "pagerank: str | None = None",
+      "bwrank: str | None = None",
+      "tranco: str | None = None",
+      "majestic: str | None = None",
+      "bws: str | None = None",
+      "ecat: str | None = None",
+      "aim: str | None = None",
+      "aio: str | None = None",
+      "air: str | None = None",
+      "aiv: str | None = None"
+    ],
+    "parameters": [
+      "TECH",
+      "OFFSET",
+      "COUNTRY",
+      "SINCE",
+      "ALL",
+      "META",
+      "OTHERTECHS",
+      "SPEND",
+      "REVENUE",
+      "SKU",
+      "FOLLOWERS",
+      "EMPLOYEES",
+      "SITEMAP",
+      "PAGERANK",
+      "BWRANK",
+      "TRANCO",
+      "MAJESTIC",
+      "BWS",
+      "ECAT",
+      "AIM",
+      "AIO",
+      "AIR",
+      "AIV"
+    ],
+    "pagination": "lists",
+    "authentication": true
+  },
+  {
+    "method": "ask",
+    "path": "/ask1/api.json",
+    "required_signature": "query: str",
+    "options": [
+      "commit: bool | None = None",
+      "next_offset: str | None = None",
+      "meta: bool | None = None"
+    ],
+    "parameters": [
+      "QUERY",
+      "COMMIT",
+      "NEXTOFFSET",
+      "META"
+    ],
+    "pagination": "ask",
+    "authentication": true
+  },
+  {
+    "method": "keyword_search",
+    "path": "/kws1/api.json",
+    "required_signature": "keyword: str",
+    "options": [
+      "limit: int | None = None",
+      "offset: str | None = None"
+    ],
+    "parameters": [
+      "KEYWORD",
+      "LIMIT",
+      "OFFSET"
+    ],
+    "pagination": "keyword",
+    "authentication": true
+  },
+  {
+    "method": "product_search",
+    "path": "/productv1/api.json",
+    "required_signature": "query: str",
+    "options": [
+      "page: int | None = None",
+      "limit: int | None = None"
+    ],
+    "parameters": [
+      "QUERY",
+      "PAGE",
+      "LIMIT"
+    ],
+    "pagination": "product",
+    "authentication": true
+  },
+  {
+    "method": "vector_search",
+    "path": "/vector/v1/api.json",
+    "required_signature": "query: str",
+    "options": [
+      "limit: int | None = None"
+    ],
+    "parameters": [
+      "QUERY",
+      "LIMIT"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "mcp_registry",
+    "path": "/mcp2/api.json",
+    "required_signature": "",
+    "options": [
+      "search: str | None = None",
+      "category: str | None = None",
+      "offset: int | None = None"
+    ],
+    "parameters": [
+      "SEARCH",
+      "CATEGORY",
+      "OFFSET"
+    ],
+    "pagination": "registry",
+    "authentication": true
+  },
+  {
+    "method": "vat",
+    "path": "/vat1/api.json",
+    "required_signature": "lookup: str | list[str]",
+    "options": [],
+    "parameters": [
+      "LOOKUP"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "trust",
+    "path": "/trustv2/api.json",
+    "required_signature": "lookup: str",
+    "options": [
+      "live: bool | None = None"
+    ],
+    "parameters": [
+      "LOOKUP",
+      "LIVE"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "free",
+    "path": "/free1/api.json",
+    "required_signature": "lookup: str",
+    "options": [],
+    "parameters": [
+      "LOOKUP"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "company_to_url",
+    "path": "/ctu3/api.json",
+    "required_signature": "company: str",
+    "options": [],
+    "parameters": [
+      "COMPANY"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "tags",
+    "path": "/tag1/api.json",
+    "required_signature": "lookup: str",
+    "options": [],
+    "parameters": [
+      "LOOKUP"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "recommendations",
+    "path": "/rec1/api.json",
+    "required_signature": "lookup: str",
+    "options": [],
+    "parameters": [
+      "LOOKUP"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "redirects",
+    "path": "/redirect1/api.json",
+    "required_signature": "lookup: str",
+    "options": [],
+    "parameters": [
+      "LOOKUP"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "keywords",
+    "path": "/kw2/api.json",
+    "required_signature": "lookup: str",
+    "options": [],
+    "parameters": [
+      "LOOKUP"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "trends",
+    "path": "/trends/v6/api.json",
+    "required_signature": "tech: str",
+    "options": [],
+    "parameters": [
+      "TECH"
+    ],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "whoami",
+    "path": "/whoamiv1/api.json",
+    "required_signature": "",
+    "options": [],
+    "parameters": [],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "usage",
+    "path": "/usagev2/api.json",
+    "required_signature": "",
+    "options": [],
+    "parameters": [],
+    "pagination": null,
+    "authentication": true
+  },
+  {
+    "method": "vat_types",
+    "path": "/vat1/types.json",
+    "required_signature": "",
+    "options": [],
+    "parameters": [],
+    "pagination": null,
+    "authentication": false
+  },
+  {
+    "method": "mcp_categories",
+    "path": "/mcp2/categories.json",
+    "required_signature": "",
+    "options": [],
+    "parameters": [],
+    "pagination": null,
+    "authentication": false
+  }
+]

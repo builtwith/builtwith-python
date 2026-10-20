@@ -1,0 +1,31 @@
+# BuiltWith Python SDK (proposed public documentation)
+
+> Official typed sync/async REST SDK. Python >=3.10. Distribution:
+> builtwith-official; import builtwith_official. Not the unrelated builtwith package.
+
+This file is a publication proposal; no production website changes are included.
+Resolve the relative links against the eventual SDK documentation root.
+
+- [Quick start and authentication](../README.md)
+- [Exact method signatures](api-reference.md)
+- [Machine-readable endpoints](endpoints.json)
+- [Agent integration](agents.md)
+- [MCP setup](mcp.md)
+- [Scope and source contracts](discovery.md)
+- [Full upstream API reference](https://api.builtwith.com/llms-full.txt)
+
+Authentication: BUILTWITH_API_KEY or BuiltWith(api_key=...). Header: Authorization: API KEY.
+Use with BuiltWith() as client; result = client.domain("example.com", no_pii=True).
+Async: async with AsyncBuiltWith() as client; result = await client.domain("example.com").
+result.data preserves JSON fields; result.headers provides credit/rate headers.
+API calls can spend credits. usage(), whoami(), trends(), free(), mcp_registry() are
+documented credit-free with a key; vat_types() and mcp_categories() need no key.
+Lists and keyword search require subscription access. Inspect whoami() for account limits.
+Use *_pages methods lazily; set max_pages to bound agent cost. Retry defaults are zero.
+Do not retry bulk_submit() or bulk_result() automatically.
+Do not expose credentials or billing actions in agent tool arguments.
+Use endpoints.json and api-reference.md; do not guess additional endpoints or parameters.
+MCP: install the mcp extra, then async with builtwith_official.mcp.connect_mcp() as session.
+This connects to the existing https://api.builtwith.com/mcp server; no new server is hosted.
+Discover existing schemas with await session.list_tools(); invoke with await session.call_tool().
+
