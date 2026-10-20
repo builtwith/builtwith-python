@@ -70,7 +70,7 @@ if __name__ == "__main__":
 
 In Jupyter use `await main()` instead of `asyncio.run`. Reuse one async client per
 application lifespan in FastAPI; close it with `await client.aclose()`. See
-[examples](examples/) for FastAPI, pipelines, agent functions and optional framework adapters.
+[examples](https://github.com/builtwith/builtwith-python/tree/main/examples/) for FastAPI, pipelines, agent functions and optional framework adapters.
 The core installation does not depend on any AI framework.
 
 ## Responses and errors
@@ -130,8 +130,8 @@ page parameters; the SDK never follows their host or embedded credentials.
 
 ## Coverage and access
 
-See the [complete method signatures](docs/api-reference.md) and
-[machine-readable endpoint inventory](docs/endpoints.json).
+See the [complete method signatures](https://github.com/builtwith/builtwith-python/blob/main/docs/api-reference.md) and
+[machine-readable endpoint inventory](https://github.com/builtwith/builtwith-python/blob/main/docs/endpoints.json).
 
 | Capability | API version / access |
 | --- | --- |
@@ -161,18 +161,18 @@ The SDK does not auto-poll or auto-retrieve jobs.
 
 ## MCP and agents
 
-[MCP setup](docs/mcp.md) covers Python client integration with the existing hosted
-BuiltWith endpoint. [Agent guidance](docs/agents.md) provides function schemas and
-framework integration advice. [llms.txt](docs/llms.txt) is a proposal for future public
+[MCP setup](https://github.com/builtwith/builtwith-python/blob/main/docs/mcp.md) covers Python client integration with the existing hosted
+BuiltWith endpoint. [Agent guidance](https://github.com/builtwith/builtwith-python/blob/main/docs/agents.md) provides function schemas and
+framework integration advice. [llms.txt](https://github.com/builtwith/builtwith-python/blob/main/docs/llms.txt) is a proposal for future public
 documentation; this change does not modify the BuiltWith website.
 
 ## Development and distribution
 
-See [development and release instructions](docs/development.md) and [changelog](CHANGELOG.md).
+See [development and release instructions](https://github.com/builtwith/builtwith-python/blob/main/docs/development.md) and [changelog](https://github.com/builtwith/builtwith-python/blob/main/CHANGELOG.md).
 MIT license, consistent with the existing BuiltWith MCP and examples repositories.
 
 The implementation follows the workspace API `llms-full.txt` reference (snapshot inspected
 2026-10-20), rather than older endpoint versions in existing clients.
 Public reference: [BuiltWith full API documentation](https://api.builtwith.com/llms-full.txt).
-Known scope exclusions and discovery findings are in [discovery.md](docs/discovery.md).
+Known scope exclusions and discovery findings are in [discovery.md](https://github.com/builtwith/builtwith-python/blob/main/docs/discovery.md).
 

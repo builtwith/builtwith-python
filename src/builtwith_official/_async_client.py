@@ -54,7 +54,7 @@ class AsyncBuiltWith:
             transport=transport,
             follow_redirects=False,
             trust_env=False,
-            headers={"User-Agent": "builtwith-official-python/0.1.0", "Accept": "application/json"},
+            headers={"User-Agent": "builtwith-official-python/0.1.1", "Accept": "application/json"},
         )
 
     async def aclose(self) -> None:
